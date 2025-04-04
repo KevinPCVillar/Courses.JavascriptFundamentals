@@ -19,7 +19,7 @@ const cliente = {
 
 const { nombre } = producto
 const { nombre: nombreCliente, direccion: { calle } } = cliente
-const { numero } = cliente.direccion.codigoPostal;
+const { codigoPostal: { numero } } = cliente.direccion;
 
 console.log(nombre)
 console.log(nombreCliente)
